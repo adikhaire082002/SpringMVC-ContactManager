@@ -1,0 +1,225 @@
+/* Reset and Base Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/* Sign Up Page Layout */
+.sign-up-page .center-block {
+    display: flex;
+    flex-direction: column; /* Vertically stack sections */
+    justify-content: center;
+    align-items: center;
+    width: 80%;  /* Increased width for the container */
+    max-width: 1000px;  /* Maximum width for large screens */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+    height: 75%;  /* Reduced height to leave space at top and bottom */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.sign-up-page .center-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Top Section (Form Section) */
+.sign-up-page .top-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;  /* Adjusted gap between fields */
+}
+
+.sign-up-page .top-section .inline-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.sign-up-page .top-section .inline-fields div {
+    width: 48%;  /* Wider first name and last name fields */
+}
+
+.sign-up-page .top-section label {
+    font-size: 1rem;
+    color: #555;
+    padding-bottom: 5px;
+    margin-bottom: 5px;  /* Adjusted margin */
+}
+
+.sign-up-page .top-section input,
+.sign-up-page .top-section select {
+    padding: 6px 10px;  /* Reduced padding for smaller height */
+    font-size: 1rem;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    width: 80%;
+    height: 30px;  /* Reduced height */
+    margin-bottom: 15px;  /* Added margin between fields */
+}
+.sign-up-page .top-section select {
+    padding: 6px 10px;  /* Reduced padding for smaller height */
+    font-size: 1rem;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    width: 90%;
+    height: 45px;  /* Reduced height to match input fields */
+    margin-bottom: 15px;  /* Added margin between fields */
+}
+
+/* Make the select (security question) field same height as input fields */
+.sign-up-page .top-section select {
+    -webkit-appearance: none;  /* Removes default dropdown arrow */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Input and Select Field Focus */
+.sign-up-page .top-section input:focus,
+.sign-up-page .top-section select:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 4px rgba(37, 117, 252, 0.3);
+}
+
+/* Button Styling */
+button,
+.clear-button {
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #2575fc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+    width: auto;
+}
+
+button:hover,
+.clear-button:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Centering the Buttons */
+.sign-up-page .top-section button,
+.sign-up-page .top-section .clear-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bottom Section */
+.sign-up-page .bottom-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up-page .bottom-section h2 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+.sign-up-page .bottom-section p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.sign-up-page .bottom-section .signup-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #2575fc;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sign-up-page .bottom-section .signup-button:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.sign-up-page footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: black;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Clear Button Styling */
+.clear-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2575fc;
+    background: #fff;
+    border: 2px solid #2575fc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 10px; /* Space between Clear and Submit buttons */
+}
+
+.clear-button:hover {
+    background-color: #2575fc;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .sign-up-page .center-block {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .sign-up-page .top-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .sign-up-page form input,
+    .sign-up-page form button {
+        font-size: 1rem;
+    }
+
+    /* Ensure inline fields stack on smaller screens */
+    .sign-up-page form .inline-fields {
+        flex-direction: column;
+    }
+
+    .sign-up-page form .inline-fields input,
+    .sign-up-page form .inline-fields select {
+        width: 100%;
+    }
+}
